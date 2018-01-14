@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BTCacheKit_Example' do
+  pod 'BTCacheKit', :path => '../'
+
+  target 'BTCacheKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
