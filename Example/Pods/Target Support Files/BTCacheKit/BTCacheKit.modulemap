@@ -1,0 +1,6 @@
+framework module BTCacheKit {
+  umbrella header "BTCacheKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

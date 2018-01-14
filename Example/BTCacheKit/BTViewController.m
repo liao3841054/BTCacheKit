@@ -7,6 +7,7 @@
 //
 
 #import "BTViewController.h"
+#import "BTDBCache.h"
 
 @interface BTViewController ()
 
@@ -18,6 +19,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"%@",@"BTViewController");
+    
+    // Test Ok
+    [[BTDBCache sharedManager] insertItem:@"哈哈" cacheKey:@"item1"];
+    NSString *object = [[BTDBCache sharedManager] itemWithCacheKey:@"item1"];
+    NSLog(@"result:%@",object);
+    
 }
 
 - (void)didReceiveMemoryWarning
