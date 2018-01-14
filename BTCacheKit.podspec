@@ -31,8 +31,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'BTCacheKit/Classes/**/*'
-  s.public_header_files = "BTCacheKit/Classes/BTDBCache.h"
-
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.public_header_files = "BTCacheKit/**/*.h"
+  s.requires_arc = true
   s.dependency 'FMDB'
 end

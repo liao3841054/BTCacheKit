@@ -23,8 +23,8 @@
     NSLog(@"%@",@"BTViewController");
     
     // Test Ok
-    [[BTDBCache sharedManager] insertItem:@"哈哈" cacheKey:@"item1"];
-    NSString *object = [[BTDBCache sharedManager] itemWithCacheKey:@"item1"];
+    [[BTDataCache sharedManager] insertItem:@"哈哈" cacheKey:@"item1"];
+    NSString *object = [[BTDataCache sharedManager] itemWithCacheKey:@"item1"];
     NSLog(@"result:%@",object);
     
 }

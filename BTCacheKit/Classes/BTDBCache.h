@@ -8,36 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BTDBCache : NSObject
+#ifndef BTDBCache_h
+#define BTDBCache_h
 
-+ (instancetype)sharedManager;
+#import "BTDataCache.h"
 
-/**
- 创建Table
- */
-- (void)createTable;
-
-
-/**
- 缓存数据到数据库
- 
- @param item 缓存数据
- @param cacheKey 缓存的Key
- */
-- (void)insertItem:(id)item cacheKey:(NSString *)cacheKey;
-
-/**
- 通过缓存的key来获取对应的数据
- 
- @param 缓存的Key
- @return 缓存数据
- */
-- (id)itemWithCacheKey:(NSString *)cacheKey;
-
-/**
- 清空所有缓存数据
- */
-- (void)clearAll;
-
-
-@end
+#endif /* BTDBCache_h */

@@ -6,27 +6,27 @@
 //  Copyright © 2018年 251180323@qq.com. All rights reserved.
 //
 
-#import "BTDBCache.h"
+#import "BTDataCache.h"
 @import FMDB;
 
 NSString * const kDBName = @"db.sqlite";
 
 static FMDatabase *_db;
 
-@interface BTDBCache ()
+@interface BTDataCache ()
 
 @property (nonatomic, copy) NSDictionary *whiteList;
 
 @end
 
-@implementation BTDBCache
+@implementation BTDataCache
 
 + (instancetype)sharedManager {
     
-    static BTDBCache *manager = nil;
+    static BTDataCache *manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        manager = [[BTDBCache alloc] init];
+        manager = [[BTDataCache alloc] init];
         [manager createTable];
     });
     return manager;
