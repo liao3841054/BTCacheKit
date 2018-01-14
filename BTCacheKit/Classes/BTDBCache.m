@@ -7,7 +7,6 @@
 //
 
 #import "BTDBCache.h"
-
 @import FMDB;
 
 NSString * const kDBName = @"db.sqlite";

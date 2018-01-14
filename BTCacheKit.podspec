@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-封装底层的数据库，提供数据缓存
+封装底层的数据库，提供数据缓存服务
                        DESC
 
   s.homepage         = 'https://github.com/liao3841054/BTCacheKit.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '251180323@qq.com' => '251180323@qq.com' }
-  s.source           = { :https://github.com/liao3841054/BTCacheKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/liao3841054/BTCacheKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -38,5 +38,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'FMDB'
+  s.dependency 'FMDB'
 end
