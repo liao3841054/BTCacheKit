@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BTCacheKit'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = '缓存库'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'BTCacheKit/Classes/**/*'
-  s.public_header_files = "BTCacheKit/**/*.h"
+  s.public_header_files = "BTCacheKit/Classes/**/*.h"
   s.requires_arc = true
   s.dependency 'FMDB'
 end
